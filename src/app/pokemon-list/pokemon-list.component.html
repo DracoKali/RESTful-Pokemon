@@ -1,0 +1,9 @@
+<div class="container-list">
+  <md-card *ngFor="let pokemon of pokemons" [routerLink]="['/details', pokemon.id]">
+    <md-card-title>#{{pokemon.id}} {{pokemon.formattedName()}}</md-card-title>
+    <div class="img-container">
+      <img src="{{pokemon.image()}}" alt="{{pokemon.formattedName()}}" md-card-lg-image>
+    </div>
+  </md-card>
+</div>
+
